@@ -1,0 +1,46 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/MapExerciseTest.java",
+      "testCases": [
+        {
+          "methodName": "createMapTest",
+          "label": "Verify a new map is created successfully",
+          "description": "Checks that createMap() returns a non-null Map instance."
+        },
+        {
+          "methodName": "getSizeTest1",
+          "label": "Verify a new map starts with size 0",
+          "description": "Checks that getSize() returns 0 when called on a newly created, empty map."
+        },
+        {
+          "methodName": "getSizeTest2",
+          "label": "Verify inserting one entry updates map size to 1",
+          "description": "Adds one key–value pair with addKeyValuePair() and verifies getSize() returns 1."
+        },
+        {
+          "methodName": "addKeyValuePairTest1",
+          "label": "Verify value can be retrieved by key after insertion",
+          "description": "Inserts a single key–value pair and verifies getValueFromKey() returns the expected value for that key."
+        },
+        {
+          "methodName": "addKeyValuePairTest2",
+          "label": "Verify multiple inserted entries are all retrievable",
+          "description": "Inserts two key–value pairs and verifies getValueFromKey() returns the correct values for both keys."
+        },
+        {
+          "methodName": "removeKeyValuePairTest1",
+          "label": "Verify removing a key–value pair makes the key inaccessible",
+          "description": "Inserts two key–value pairs, removes one using removeKeyValuePair(), and verifies the removed key is no longer present in the map."
+        },
+        {
+          "methodName": "overwriteValueTest1",
+          "label": "Verify overwriting a value updates the value for an existing key",
+          "description": "Inserts two key–value pairs, overwrites the value for one key with overwriteValue(), and verifies the new value is returned when accessed by that key."
+        }
+      ]
+    }
+  ]
+}
+
